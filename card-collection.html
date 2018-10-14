@@ -1,0 +1,436 @@
+<head>
+  <title>Pokémon Trading Cards</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<style>
+html {
+font-size: 12px;
+font-family: 'Josefin Sans', 'sans-serif';
+}
+
+ul {
+list-style-type: none;
+}
+
+span {
+font-weight: bold;
+}
+
+.card1 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #8642f4, #8642f4);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+padding: 5px;
+width: 328px;
+}
+
+.card2 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #4e42f4, #201792);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+margin-top: 10px;
+padding: 5px;
+width: 328px;
+}
+
+.card3 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #778d97, #5b1792);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+margin-top: 10px;
+padding: 5px;
+width: 328px;
+}
+
+.card4 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #f44242, #744d07);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+margin-top: 10px;
+padding: 5px;
+width: 328px;
+}
+
+.card5 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #f442b9, #077416);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+margin-top: 10px;
+padding: 5px;
+width: 328px;
+}
+
+.card6 {
+/* Hex Color Picker */
+background: linear-gradient(to bottom left, #af48d8, #dd46d1);
+/*   border-radius: 5px; */
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+border: solid black 1px;
+margin-top: 10px;
+padding: 5px;
+width: 328px;
+}
+
+.decorative-electric {
+/*  Color gradients:
+https://www.w3schools.com/css/css3_gradients.asp*/
+background: linear-gradient(to bottom right, yellow, orange);
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.decorative-water {
+background: linear-gradient(to top right, blue, cyan);
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.decorative-dragonst {
+background: radial-gradient(circle, indigo, gray);
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.decorative-groundfire {
+background: radial-gradient(circle, rgb(194, 6, 6), rgb(214, 122, 2));
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.decorative-rainbow {
+background: radial-gradient(circle, rgb(235, 238, 241), rgb(214, 34, 2), rgb(214, 164, 2), rgb(150, 214, 2), rgb(2, 189, 214));
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.decorative-psychic {
+background: radial-gradient(circle, rgb(223, 184, 240), rgb(204, 69, 125), rgb(173, 92, 180), rgb(152, 37, 201));
+border-radius: 4px;
+border: 1px black;
+box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36);
+padding: 5px;
+}
+
+.species1 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 100px;
+font-size: 18px;
+}
+
+.species2 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 110px;
+font-size: 18px;
+}
+
+.species3 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 110px;
+font-size: 18px;
+}
+
+.species4 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 110px;
+font-size: 18px;
+}
+
+.species5 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 110px;
+font-size: 18px;
+}
+
+.species6 {
+border: solid black 2px;
+border-radius: 4px;
+background-color: rgba(77, 51, 25, 0.3);
+/*   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.36); */
+color: white;
+display: inline-block;
+padding: 11px;
+box-sizing: border-box;
+margin-left: 110px;
+font-size: 18px;
+}
+
+.top img {
+height: 300px;
+width: 300px;
+border-radius: 4px;
+box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.17);
+border: solid black 2px;
+margin: 5px;
+}
+
+.bottom {
+border: solid black 2px;
+border-radius: 5px;
+box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.17);
+padding: 2px;
+margin: 7px;
+color: white;
+background-color: rgba(77, 51, 25, 0.69);
+}
+
+.interesting_fact {
+font-style: italic;
+}
+
+h3.species {
+color: white;
+font-size: 20px;
+margin: 11px 0 0 78px;
+padding-top: 2px;
+text-align: center;
+/* width: 151px; */
+height: 26px;
+font-family: "papyrus";
+}
+
+.species h3 {
+font-size: 25px;
+font-family: "Papyrus";
+text-align: center;
+display: inline-block;
+margin: 0 auto;
+}
+</style>
+
+<body>
+<div class="pikachu">
+  <div class="card1">
+    <div class="decorative-electric">
+      <div class="top">
+                  <div class="species1">
+                  <h3>Pikachu</h3>
+                  </div>
+                  
+                  <div class="border">
+                  <img src="https://nerdist.com/wp-content/uploads/2017/07/Pikachu-970x545.png" alt="pikachu">
+                  </div>
+          </div>
+
+          <div class="bottom">
+              <p class="interesting_fact">It occasionally uses an electric shock to recharge a fellow Pikachu that is in a weakened state.</p>
+              <p class="description">Pikachu is a short, chubby rodent Pokémon covered in yellow fur with two red circles on its cheeks that contain pouches for electricity storage.</p>
+              <ul>
+              <li><span>Pokédex Number</span>: #025</li>
+              <li><span>Type</span>: Electric</li>
+              <li><span>Related To</span>: Pichu, Raichu</li>
+              <li><span>Eye Color</span>: Brown</li>
+              <li><span>Region</span>: Kanto</li>
+              </ul>
+              <p class="info">Pikachu charges itself while sleeping overnight, though stress and a lack of sleep can affect this. It is able to release electric discharges of varying intensity. Pikachu has been known to build up energy in its glands, and will need to discharge to avoid complications. It is also able to release energy through its tail, which acts as a grounding rod, as well as recharging fellow Pikachu with electric shocks. Pikachu can also electrify itself to use its signature move Volt Tackle.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <div class="piplup">
+      <div class="card2">
+          <div class="decorative-water">
+              <div class="top">
+                      <div class="species2">
+                      <h3>Piplup</h3>
+                      </div>
+                      
+                      <div class="border">
+                      <img src="https://cdn.bulbagarden.net/upload/thumb/d/d6/Rowan_Piplup.png/220px-Rowan_Piplup.png" alt="piplup">
+                      </div>
+              </div>
+
+              <div class="bottom">
+                  <p class="interesting_fact">A poor walker, it often falls down. However, its strong pride makes it puff up its chest without a care.</p>
+                  <p class="description">Piplup is a light-blue, penguin-like Pokémon, which is covered in thick down to insulate against the cold. It has a dark blue head with a primarily white face and a short, yellow beak. The dark blue feathers on its head extend down its back and around its neck, which causes it to appear to be wearing a cape.</p>
+                  <ul>
+                  <li><span>Pokédex Number</span>: #393</li>
+                  <li><span>Type</span>: Water</li>
+                  <li><span>Related To</span>: Prinplup, Empoleon</li>
+                  <li><span>Eye Color</span>: Blue</li>
+                  <li><span>Region</span>: Sinnoh</li>
+                  </ul>
+                  <p class="info">Piplup has a strong sense of self-pride. Because of its pride, it has a hard time accepting food from humans and bonding with its caretakers. It will even puff out its chest after it falls down, which it often does due to its poor walking abilities. However, it is a skilled swimmer that can dive for over ten minutes in order to hunt and can even fly short distances.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<div class="Dialga">
+      <div class="card3">
+          <div class="decorative-dragonst">
+              <div class="top">
+                      <div class="species3">
+                      <h3>Dialga</h3>
+                      </div>
+                      
+                      <div class="border">
+                      <img src="https://media1.tenor.com/images/a07fb62a17481526743d899095ac586c/tenor.gif?itemid=7394921" alt="dialgagif">
+                      </div>
+              </div>
+
+              <div class="bottom">
+                  <p class="interesting_fact">A Pokémon spoken of in legend. It is said that time began moving when Dialga was born.</p>
+                  <p class="description">Dialga is a dark blue sauropod-like Pokémon with some gray metallic portions, such as its chestplate, which has a diamond in the center. It towers over most, standing over 17 feet tall.</p>
+                  <ul>
+                  <li><span>Pokédex Number</span>: #483</li>
+                  <li><span>Type</span>: Dragon/Steel</li>
+                  <li><span>Related To</span>: Unknown</li>
+                  <li><span>Eye Color</span>: Red</li>
+                  <li><span>Region</span>: Sinnoh</li>
+                  </ul>
+                  <p class="info">Dialga can warp time by either speeding it up, slowing it down, or stopping it altogether. As Dialga primarily resides in a different dimension, its behavior is nearly impossible to study.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="Groudon">
+    <div class="card4">
+        <div class="decorative-groundfire">
+            <div class="top">
+                    <div class="species4">
+                    <h3>Groudon</h3>
+                    </div>
+                    
+                    <div class="border">
+                    <img src="https://vignette.wikia.nocookie.net/abckidsmannycenturions/images/4/42/Groudon-legendary-pokemon-14487215-320-240.jpg/revision/latest?cb=20110329200632" alt="groudon">
+                    </div>
+            </div>
+
+            <div class="bottom">
+                <p class="interesting_fact">Groudon is said to be the personification of the land itself. Legends tell of its many clashes against Kyogre, as each sought to gain the power of nature.</p>
+                <p class="description">Groudon is a massive, bipedal, dinosaur-like creature covered in red, segmented plates of thick skin that act as armor. It also has blue stripes inside the seams of its armor plating which can only be seen when Groudon is glowing with power.</p>
+                <ul>
+                <li><span>Pokédex Number</span>: #383</li>
+                <li><span>Type</span>: Ground/Fire</li>
+                <li><span>Related To</span>: Unknown</li>
+                <li><span>Eye Color</span>: Orange</li>
+                <li><span>Region</span>: Hoenn</li>
+                </ul>
+                <p class="info">Groudon is an immensely powerful Pokémon, having the ability to summon intense droughts and cause volcanic eruptions. The droughts it can cause allow it to evaporate water, while the volcanic eruptions it can summon enable it to create land.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Arceus">
+  <div class="card5">
+      <div class="decorative-rainbow">
+          <div class="top">
+                  <div class="species5">
+                  <h3>Arceus</h3>
+                  </div>
+                  
+                  <div class="border">
+                  <img src="https://lh3.googleusercontent.com/-RpHuBwB2XbI/Uqe2ADVUFJI/AAAAAAAA0BY/WM8HPPWywAQ/w424-h318-n/arceus.png" alt="arceus">
+                  </div>
+          </div>
+
+          <div class="bottom">
+              <p class="interesting_fact">It is said to have emerged from an egg in a place where there was nothing then shaped the world.</p>
+              <p class="description">Arceus is a white equine resembling a qilin or centaur with a gray, vertically-striated underside. The striated pattern has similar recurrences on the underside of its mane, tail, and face.</p>
+              <ul>
+              <li><span>Pokédex Number</span>: #493</li>
+              <li><span>Type</span>: Unknown</li>
+              <li><span>Related To</span>: Unknown</li>
+              <li><span>Eye Color</span>: Red</li>
+              <li><span>Region</span>: Sinnoh</li>
+              </ul>
+              <p class="info">Arceus is thought to have created the Sinnoh region and possibly the entire Pokémon world, the lake guardians Uxie, Azelf, and Mesprit; and the creation trio Dialga, Palkia, and Giratina. Because of this, Arceus is thought to be one of the most long-lived of all Pokémon species.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="Mew">
+  <div class="card6">
+      <div class="decorative-psychic">
+          <div class="top">
+                  <div class="species6">
+                  <h3>Mew</h3>
+                  </div>
+                  
+                  <div class="border">
+                  <img src="https://thumbs.gfycat.com/LiquidUnrulyCusimanse-size_restricted.gif" alt="mew">
+                  </div>
+          </div>
+
+          <div class="bottom">
+              <p class="interesting_fact">Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.</p>
+              <p class="description">Mew is a pink, bipedal Pokémon with mammalian features. Its snout is short and wide, and it has triangular ears and large, blue eyes.</p>
+              <ul>
+              <li><span>Pokédex Number</span>: #151</li>
+              <li><span>Type</span>: Psychic</li>
+              <li><span>Related To</span>: All</li>
+              <li><span>Eye Color</span>: Blue</li>
+              <li><span>Region</span>: Kanto</li>
+              </ul>
+              <p class="info">Mew is said to have the DNA of every single Pokémon contained within its body, and as such is able to learn any attack.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
